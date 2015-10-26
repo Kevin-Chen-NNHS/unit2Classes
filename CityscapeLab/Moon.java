@@ -1,40 +1,39 @@
+import java.awt.Graphics2D;
+import java.awt.geom.Point2D;
+import java.awt.geom.Line2D;
+import java.awt.geom.Ellipse2D;
+import java.awt.Rectangle;
+import java.awt.Color;
+import java.awt.Polygon;
+import java.awt.Graphics;
 
+import java.awt.Graphics;
 
-/**
- * Write a description of class Moon here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import javax.swing.JComponent;
+import java.awt.Color;
+import java.awt.GradientPaint;
+
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
 public class Moon
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    private int x;
-
-    /**
-     * Default constructor for objects of class Moon
-     */
-    public Moon()
+    private int xLeft;
+    private int yTop;
+    
+    
+    
+    public void draw(Graphics2D g2)
     {
-        // initialise instance variables
-        x = 0;
+    Ellipse2D.Double Moon = new Ellipse2D.Double(xLeft + 950, yTop + 50, 30, 30);
+    
+    g2.setPaint(Color.BLUE);
+    g2.draw (Moon);
+    g2.setPaint(Color.WHITE);
+    g2.fill(Moon);
+    //creates the sun
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *    that describes the operation of the method
-     *
-     * @pre        preconditions for the method
-     *            (what the method assumes about the method's parameters and class's state)
-     * @post    postconditions for the method
-     *            (what the method guarantees upon completion)
-     * @param    y    description of parameter y
-     * @return    description of the return value
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x+y;
-    }
-
 }

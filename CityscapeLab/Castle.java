@@ -62,6 +62,8 @@ public void draw(Graphics2D g2)
     g2.setPaint(Color.GRAY);
     g2.fill(tower);
     g2.setPaint(Color.WHITE);
+    //creates the left tower
+    
     while (say > 0)
     {    
         
@@ -88,26 +90,29 @@ public void draw(Graphics2D g2)
             shiftx = 10;
         }
     }
-    
+    //sets the brick inlay design for the left tower
     
     Rectangle tower2 = new Rectangle (xLeft + 300, yTop + 400, 500, 400);
     g2.setPaint(Color.BLACK);
     g2.draw (tower2);
     g2.setPaint(Color.GRAY);
     g2.fill(tower2);
+    //creates the center wall
+    
     
     Rectangle tower3 = new Rectangle (xLeft + 500, yTop + 600, 100, 200);
     g2.setPaint(Color.BLACK);
     g2.draw (tower3);
     g2.setPaint(Color.WHITE);
     g2.fill(tower3);
+    //creates the door
     
     Rectangle tower4 = new Rectangle (xLeft + 800 + shiftx, yTop + 200 ,100 ,600);
     g2.draw (tower4);
     g2.setPaint(Color.GRAY);
     g2.fill(tower4);
     g2.setPaint(Color.WHITE);
-    
+    //creates the east tower
     
     shiftx = 0;
     yay = 5;
@@ -140,16 +145,9 @@ public void draw(Graphics2D g2)
             shiftx = 10;
         }
     }
+    //sets the brick inlay design for the right tower
     
     
-    
-    Ellipse2D.Double Sun
-    = new Ellipse2D.Double(xLeft + 50, yTop + 50, 30, 30);
-    
-    
-    g2.draw (Sun);
-    g2.setPaint(Color.YELLOW);
-    g2.fill(Sun);
     
     
         
